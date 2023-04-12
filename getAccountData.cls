@@ -4,12 +4,12 @@ public class getAccountData {
     {
         if(searchTerm=='')
         {
-             return [SELECT Name, AccountNumber, Phone FROM Account];
+             return [SELECT Name, AccountNumber, Type, BillingAddress, OwnerId FROM Account];
         }
         else
         {
              string searchKey = '%'+searchTerm+'%';
-            return [SELECT Name, AccountNumber, Phone FROM Account WHERE Name LIKE:searchKey];
+            return [SELECT Name, AccountNumber, Type, BillingAddress, OwnerId FROM Account WHERE Name LIKE:searchKey];
          }
     }
 }
