@@ -10,7 +10,13 @@ export default class CustomAccountTab extends LightningElement {
     dataTableColumns = [{
             label: "Account Name",
             fieldName: "Name",
-            type: "url"
+            /*type: "url",
+            typeAttributes: {
+                label: {
+                    fieldName: "Name"
+                },
+                target: "_blank"
+            }*/
         },
         {
             label: "Account Number",
@@ -37,6 +43,7 @@ export default class CustomAccountTab extends LightningElement {
 
     resultData;
     searchKey = '';
+
     @wire(getAccountRecords, {
         searchTerm: '$searchKey'
     })
