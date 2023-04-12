@@ -18,6 +18,3 @@ Page should have Next, Previous, First and Last navigation options.
 Account search page should have a search option, it should be applied on the account name field. While entering search text in the search text box, the system should be capable of displaying only records that match search text in account name. Also consider option 3) pagination as well on search results.
 
 Account Name should be visible as an account link where users can click on account name, system should redirect to Account Record Page (Standard record page).
-
-
-
