@@ -9,15 +9,24 @@ export default class CustomAccountTab extends LightningElement {
     dataTableData;
     dataTableColumns = [{
             label: "Account Name",
-            fieldName: "Name"
+            fieldName: "Name",
+            type: "url"
         },
         {
             label: "Account Number",
             fieldName: "AccountNumber"
         },
         {
-            label: "Phone",
-            fieldName: "Phone"
+            label: "Type",
+            fieldName: "Type"
+        },
+        {
+            label: "Billing Address",
+            fieldName: "BillingAddress"
+        },
+        {
+            label: "Owner Id",
+            fieldName: "OwnerId"
         }
     ];
 
