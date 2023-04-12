@@ -1,0 +1,29 @@
+<template>
+
+    <div class="slds-box">
+
+        <lightning-card title="Custom Account Tab">
+
+            <div class="slds-p-around_medium">
+                <lightning-layout>
+                    <lightning-layout-item>
+                        <lightning-input class="slds-m-bottom_medium" type="text" placeholder="Search Account Name"
+                            onchange={searchHandler}>
+                        </lightning-input>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+
+            <lightning-layout>
+                <lightning-layout-item>
+                    <lightning-datatable key-field="id" data={resultData} columns={dataTableColumns}
+                        show-row-number-column="true" hide-checkbox-column="true">
+                    </lightning-datatable>
+                </lightning-layout-item>
+            </lightning-layout>
+
+        </lightning-card>
+
+    </div>
+
+</template>
