@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-m-aaround_medium">
+        <lightning-card>
+
+            <div class="slds-align_absolute-center">
+                <lightning-layout>
+                    <lightning-input class="slds-m-bottom_medium" type="text" placeholder="Search Account Name..."
+                        onchange={searchHandler}>
+                    </lightning-input>
+                </lightning-layout>
+            </div>
+
+            <div class="slds-m-around_medium" if:true={data}>
+                <lightning-datatable data={data} columns={columns} key-field="Id" show-row-number-column="true"
+                    hide-checkbox-column="true"></lightning-datatable>
+            </div>
+
+        </lightning-card>
+
+    </div>
+</template>
